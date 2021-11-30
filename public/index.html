@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <title>
+      Chalkboard
+    </title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="row">
+        <div class="col-12 offset-md-3 col-md-6 offset-lg-4 col-lg-4">
+          <img src="img/chalkboard.jpg" alt="page logo">
+        </div>
+      </header>      
+      <div class="row" id="mainPanel">
+        <div class="col-12 offset-md-3 col-md-6 offset-lg-4 col-lg-4">
+          <form id="loginForm">
+            <div id="credentials">
+              <div id="login">
+                <label for="loginInput">Login</label>
+                <input id="loginInput" type="text" name="login">
+              </div>
+              <div id="password">
+                <label for="passwordInput">Password</label>
+                <input id="passwordInput" type="password" name="password">
+              </div>
+            </div>
+          </form>
+          <div id="signUp">
+            <form action="signup.html">
+              <input type="submit" id="signUpButton" value="Sign up">
+            </form>
+          </div>
+          <div id="loginControl">
+            <input type="button" id="loginButton" value="Login" 
+              onclick="login()">
+          </div>
+          <div id="messages" class="text-center">
+            <label id="messageLabel"></label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
