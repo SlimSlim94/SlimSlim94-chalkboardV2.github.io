@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <title>
+      Sign Up
+    </title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 offset-md-3 col-md-6 offset-lg-4 col-lg-4" 
+          id="signUpPanel">
+          <form id="signUpForm">
+            <h1>Sign Up</h1>
+            <div id="username">
+              <label for="usernameInput">Username:</label>
+              <input id="usernameInput" type="text" name="username">
+            </div>
+            <div id="password">
+              <label for="passwordInput">Password:</label>
+              <input id="passwordInput" type="password" name="password">
+            </div>
+            <div id="confirmPassword">
+              <label for="confirmPasswordInput">Confirm password:</label>
+              <input id="confirmPasswordInput" type="password" 
+                name="confirmPassword">
+            </div>
+            <div id="firstName">
+              <label for="firstNameInput">First name:</label>
+              <input id="firstNameInput" type="text" name="firstName">
+            </div>
+            <div id="lastName">
+              <label for="lastNameInput">Last name:</label>
+              <input id="lastNameInput" type="text" name="lastName">
+            </div>
+            <div id="roleOptions">
+              <div id="studentOption">
+                <input id="studentInput" type="radio" name="role" 
+                  value="student">
+                <label for="studentLabel">Student</label>
+              </div>
+              <div id="teacherOption">
+                <input id="teacherInput" type="radio" name="role"
+                  value="teacher">
+                <label for="teacherLabel">Teacher</label>
+              </div>
+            </div>
+            <div id="ok">
+              <input id="okButton" type="button" value="Ok" onclick="signUp()">
+            </div>
+          </form>
+          <div id="messages" class="text-center">
+            <label id="messageLabel"></label>
+          </div>
+          <a href="index.html">Back to login</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/signup.js"></script>
+  </body>
+</html>
