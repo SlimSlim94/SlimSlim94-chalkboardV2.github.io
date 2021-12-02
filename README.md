@@ -1,5 +1,5 @@
 <h2><a href="https://slimslim94.github.io/chalkboard2.0.github.io/chalkboard2.0/webpages/index.html">Chalkboard website</a></h2>
-<h2>Features<h2>
+<h2>Features</h2>
  - login screen
    - user can login or sign up for new account
  -Sign up
