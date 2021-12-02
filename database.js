@@ -1,7 +1,15 @@
 const { MongoClient } = require('mongodb');
+const uri = "mongodb+srv://cs355:cs355@chalkboard.v5lmz.mongodb.net/chalkboard?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+client.connect(err => {
+  const collection = client.db("chalkboard").collection("users");
+  // perform actions on the collection object
+  client.close();
+});
+
 
 // Connects to the Chalkboard database
-function connect(onConnect) {
+/*function connect(onConnect) {
   const mongoClient = new MongoClient('mongodb://localhost:27017/');
   mongoClient.connect((err, client) => {
     if (err) {
@@ -16,7 +24,7 @@ function connect(onConnect) {
       client.close();
     });
   });
-}
+}*/
 
 // Checks whether user exists with the given username
 // Calls back the onResult function with the result of search
