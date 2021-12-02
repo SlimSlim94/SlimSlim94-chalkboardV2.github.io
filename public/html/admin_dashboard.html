@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/admin_dashboard.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">    
+    <title>
+      Admin
+    </title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12">
+              <img src="img/admin.jpg" width="100" alt="page logo"> 
+            </div>
+          </div>
+          <nav class="row">
+            <!-- Breadcrumbs -->
+            <div id="breadcrumbs" class="col-12">
+              <a href="#" onclick="logout()">Logout</a>
+            </div>
+          </nav>
+          <div class="row">
+            <!-- Search bar -->
+            <div id="searchBar" class="col-12">
+              <input id="searchInput" type="search" placeholder="Search...">
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="mainPanel" class="row">
+        <!-- Filter By panel -->
+        <div id="filterByPanel" class="col-12 col-lg-3 m-1">
+          <form id="filterBy">
+            <h2>Filter By</h2>
+            <hr>
+            <div id="availabilityFilter">
+              <div id="availableFilter">
+                <input type="checkbox" name="available" id="availableInput">
+                <label for="availableInput">Available</label>
+              </div>
+              <div id="nonavailableFilter">
+                <input type="checkbox" name="nonavailable" id="nonavailableInput">
+                <label for="nonavailableInput">Non Available</label>
+              </div>
+            </div>
+            <hr>
+            <div id="entitiesFilter">
+              <div id="studentsFilter">
+                <input type="checkbox" name="students" id="studentsInput">
+                <label for="studentsInput">Students</label>
+              </div>
+              <div id="coursesFilter">
+                <input type="checkbox" name="courses" id="coursesInput">
+                <label for="coursesInput">Courses</label>
+              </div>
+              <div id="instructorsFilter">
+                <input type="checkbox" name="instructors" id="instructorsInput">
+                <label for="instructorsInput">Instructors</label>
+              </div>                        
+            </div>
+          </form>
+        </div>
+        <!-- Search results -->
+        <div id="searchResultsPanel" class="col-12 col-lg-6 m-1">
+          <h2>Search Results...</h2>
+        </div>
+        <!-- View By panel-->
+        <div id="viewByPanel" class="col-12 col-lg-2 m-1">
+          <h2>View By</h2>
+          <div id="viewByFilter">
+            <div id="viewByOption1">
+              <input id="viewByOption1Input" type="radio" name="viewByOption">
+              <label for="viewByOption1Input">...</label>
+            </div>
+            <div id="viewByOption2">
+              <input id="viewByOption2Input" type="radio" name="viewByOption">
+              <label for="viewByOption2Input">...</label>
+            </div>
+            <div id="viewByOption3">
+              <input id="viewByOption3Input" type="radio" name="viewByOption">
+              <label for="viewByOption3Input">...</label>
+            </div>
+          </div>
+        </div>
+        <!-- View -->
+        <div id="viewPanel" class="col-12 col-lg-3 m-1">
+          <form id="view">
+            <h2>View</h2>
+            <div id="name">
+              <input id="nameInput" type="search" placeholder="Enter name...">          
+            </div>
+            <div id="viewOptions">
+              <div id="viewHistory">
+                <input id="viewHistoryOption" name="viewOption" type="radio">
+                <label for="viewHistoryOption">History</label>
+              </div>
+              <div id="viewEtc">
+                <input id="viewEtcOption" name="viewOption" type="radio">
+                <label for="viewEtcOption">Etc...</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/common.js"></script>
+  </body>
+</html>

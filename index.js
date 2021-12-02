@@ -67,9 +67,18 @@ app.post('/api/login', (req, res) => {
     });
   }
 });
-
+app.get('/signup', (req, res) => {
+  const { body } = req;
+  console.log('signup');
+  res.sendFile(__dirname + '/public/html/signup.html')
+})
+app.get('/', (req, res) => {
+  const { body } = req;
+  console.log('index');
+  res.sendFile(__dirname + '/public/html/index.html')
+})
 // Starting listening on the port
-const port = process.env.port || 80;
+const port = process.env.PORT || 8080;
 app.listen(port, () => {
   console.log(`Started listening for incoming connections at the port ${port}`);
 });
