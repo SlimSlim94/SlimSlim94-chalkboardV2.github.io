@@ -1,17 +1,17 @@
 <h2><a href="https://slimslim94.github.io/chalkboard2.0.github.io/chalkboard2.0/webpages/index.html">Chalkboard website</a></h2>
 <h2>Features</h2>
-  login screen\
-   - user can login or sign up for new account\
- Sign up\
-  -user is asked to provide an email and password. they must also provide a first and last name. the role must be chosen upon sign up\
- Sign in\
-  - user is taken to a specific screen depending on the role associated with their account (teacher, student, admin)\
- Home return
-  - from every page there is a way to return to the home page\
- images\
-  - there is an images used at the home screen, dashboard, admin logo, home logo (enroll screen)\
- breadcrumbs\
-  - as we progress through more pages there is a breadcumb trail to take you back.\
+  login screen<br/>
+   - user can login or sign up for new account<br/>
+ Sign up<br/>
+  -user is asked to provide an email and password. they must also provide a first and last name. the role must be chosen upon sign up<br/>
+ Sign in<br/>
+  - user is taken to a specific screen depending on the role associated with their account (teacher, student, admin)<br/>
+ Home return<br/>
+  - from every page there is a way to return to the home page<br/>
+ images<br/>
+  - there is an images used at the home screen, dashboard, admin logo, home logo (enroll screen)<br/>
+ breadcrumbs<br/>
+  - as we progress through more pages there is a breadcumb trail to take you back.<br/>
 
 <h2>Contributors</h2>
 - Sean Ramlall
