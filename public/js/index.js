@@ -19,13 +19,13 @@ function login() {
       const user = JSON.parse(event.target.response);
       switch (user.role) {
         case 'admin':
-          window.location.href = 'admin_dashboard.html';
+          window.location.href = '/html/admin_dashboard.html';
           break;
         case 'student':
-          window.location.href = 'student_dashboard.html';
+          window.location.href = '/html/student_dashboard.html';
           break;
         case 'teacher':
-          window.location.href = 'professor_dashboard.html';
+          window.location.href = '/html/professor_dashboard.html';
           break;
         default:
           break;
@@ -38,6 +38,6 @@ function login() {
     messageLabel.innerHTML = 'Network error';
   });
 
-  XHR.open('POST', 'http://localhost/api/login');
+  XHR.open('POST', '/api/login');
   XHR.send(FD);
 }

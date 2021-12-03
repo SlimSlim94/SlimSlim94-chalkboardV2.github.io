@@ -14,7 +14,7 @@ function signUp() {
       messageLabel.innerHTML = getErrorMessage(event.target);
     } else {
       // Redirecting to login page
-      window.location.href = 'index.html';
+      window.location.href = '/html/index.html';
     }
   });
 
@@ -23,6 +23,6 @@ function signUp() {
     messageLabel.innerHTML = 'Network error';
   });
 
-  XHR.open('POST', 'http://localhost/api/signup');
+  XHR.open('POST', '/api/signup');
   XHR.send(FD);
 }

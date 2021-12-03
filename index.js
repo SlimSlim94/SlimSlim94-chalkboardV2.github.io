@@ -3,6 +3,7 @@ const express = require('express');
 // For parsing bodies of the requests
 const bodyParser = require('body-parser');
 const multer = require('multer');
+const mongoose = require('mongoose');
 // Path operations
 const path = require('path');
 
@@ -10,7 +11,10 @@ const database = require('./database');
 
 // Creating the new express application
 const app = express();
-
+/* const dbURI = 'mongodb+srv://cs355:cs355@chalkboard.v5lmz.mongodb.net/chalkboard?retryWrites=true&w=majority'
+mongoose.connect(dbURI,{ useNewUrlParser: true, useUnifiedTopology: true})
+    .then((result) => console.log ("connected to DB"))
+    .catch((err) => console.log(err)); */
 // Making the public folder accessible for external use
 app.use(express.static(path.join(__dirname, 'public')));
 // For parsing data sent from forms

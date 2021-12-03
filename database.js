@@ -1,8 +1,8 @@
 const { MongoClient } = require('mongodb');
-
+const dbURI = 'mongodb+srv://cs355:cs355@chalkboard.v5lmz.mongodb.net/chalkboard?retryWrites=true&w=majority'
 // Connects to the Chalkboard database
 function connect(onConnect) {
-  const mongoClient = new MongoClient('mongodb://localhost:27017/');
+  const mongoClient = new MongoClient(DBURI);
   mongoClient.connect((err, client) => {
     if (err) {
       console.log(err);

@@ -12,5 +12,5 @@ function getErrorMessage(target) {
 // Logouts the user
 function logout() {
   sessionStorage.removeItem('currentUser');
-  window.location.href = 'index.html';
+  window.location.href = '../html/index.html';
 }
